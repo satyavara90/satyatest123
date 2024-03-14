@@ -15,7 +15,5 @@ jobs:
           run: npm run lint
         - name: npm test
           run: npm run test
-        - name: npm build
+        - name: npm build2
           run: npm run build
-        - name: npm start
-          run: npm start 
