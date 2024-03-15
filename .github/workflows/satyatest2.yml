@@ -1,5 +1,6 @@
 name: satyatest2
 on: 
+    workflow_dispatch:
     issues:
         types: [opened, edited, deleted, closed, reopened]  
 jobs:
@@ -9,4 +10,4 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v2
         - name: echo context
-          run: echo "{{ toJson(github)}}"
+          run: echo "${{ toJson(github) }}"
